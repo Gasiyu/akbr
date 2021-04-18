@@ -1,0 +1,105 @@
+remote_theme: daattali/beautiful-jekyll
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+
+title: "akbr"
+author: Akbar Hamaminatu
+
+
+navbar-links:
+  Blog: "/"
+  Projects: "projects"
+  About Me / Contact: "aboutme"
+  ❤ Support: "https://saweria.co/Gasiyu"
+
+avatar: "/assets/img/avatar-icon.png"
+
+social-network-links:
+  email: "me@akbr.dev"
+  facebook: hamaminatu
+  github: Gasiyu
+  twitter: lily_gasiyu
+  linkedin: hamaminatu
+
+share-links-active:
+  twitter: true
+  facebook: true
+  linkedin: true
+
+excerpt_length: 50
+feed_show_excerpt: false
+feed_show_tags: false
+
+keywords: "akbar hamaminatu"
+
+link-col: "#404040"
+
+mobile-theme-col: "#0085A1"
+
+site-css: "/assets/css/custom-styles.css"
+site-js: "/assets/js/custom-script.js"
+
+timezone: "Asia/Jakarta"
+permalink: /blog/:title/
+paginate: 10
+paginate_path: "/page:num/"
+
+disqus: "akbr-dev"
+google_analytics: "G-K1F5ZNN926"
+fb_app_id: ""
+
+url-pretty: "❤ Support"
+url-canonical: https://saweria.co/Gasiyu
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      carbonads: false
+      comments: true
+      social-share: true
+      show-share: true
+      show-subscribe: false
+      support_promo_box: true
+      after-content: [share-section.html, scroll-box.html]
+  -
+    scope:
+      path: "notblog"
+    values:
+      layout: "post"
+      carbonads: false
+      comments: true
+      social-share: true
+      show-share: true
+      show-subscribe: false
+      support_promo_box: true
+      after-content: [share-section.html, scroll-box.html]
+  -
+    scope:
+      path: "pages"
+    values:
+      layout: "page"
+      comments: true
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
+      before-content: [support_promo_box.html]
+
+exclude:
+  - CHANGELOG.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - docs/
+  - files/java/Scrabble/*
+
+# 2fc73a3a967e97599c9763d05e564189d5
