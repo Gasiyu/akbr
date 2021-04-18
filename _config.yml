@@ -48,7 +48,7 @@ paginate: 10
 paginate_path: "/page:num/"
 
 disqus: "akbr-dev"
-google_analytics: "G-K1F5ZNN926"
+google_analytics: "UA-194739226-1"
 fb_app_id: ""
 
 url-pretty: "❤ Support"
